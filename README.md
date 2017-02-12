@@ -27,7 +27,6 @@
 
  * ./shell_script/deploy.sh
    * 'build/kunwoo-kim-aka/' 의 directory에 위치한 프로젝트를 'deploy/kunwoo-kim-aka/' 로 복사(rsync 사용)
-   * 'deploy/kunwoo-kim-aka/' DB ip address를 실제운영되는 DB ip address 로 변환
    * rsync-ssh 를 사용하여 실제 service 되는 서버(dev-akakun_web1, dev-akakun_web2)에 전송
    * dev-akakun_web1, dev-akakun_web2 에서 업데이트 된 프로젝트로 재실행
 
@@ -67,9 +66,6 @@
         * 위 참조
     * deploy.sh
         * 위 참조
-    * dp_ip_change.js
-        * deploy 때 DP의 ip 를 바꾸는데 사용
-        * deploy script 가 실행 될 때 실행됨
     * exclude_files_list
         * build 시 제외할 파일들의 list
         * build script 가 실행 될 때 실행됨
