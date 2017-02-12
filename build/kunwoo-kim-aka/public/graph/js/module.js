@@ -1,0 +1,1 @@
+var module = angular.module("app", ["chart.js", "ngResource"]);

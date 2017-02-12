@@ -1,0 +1,11 @@
+.DS_Store
+.git
+.idea
+app_test.js
+data
+shell_script
+test
+deploy
+spec
+build
+README.md
