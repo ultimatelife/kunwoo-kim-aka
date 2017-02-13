@@ -95,7 +95,11 @@
  1. Step1
   * VM
     * name : dev-akaun.ncl
-    * package : npm, NodeJS, vim, MongoDB
+    * package
+        * npm v3.10.8
+        * NodeJS v6.9.1
+        * vim v7.4.160
+        * MongoDB v3.2.12
  2. Step2
     * 사용된 파일 : app.js, ./route/test.js
     * URL : 10.110.240.13/test
@@ -104,7 +108,10 @@
     * 방법 : MongoDB 에서 제공해주는 command line 기능으로 csv파일을 database 로딩하는 shell script 를 만듬
         * 파일 : ./data/data_load.sh
  4. Step4
-    * JS Package : Jquery, DataTables, BootStrap
+    * JS Package
+        * Jquery v1.12.0
+        * DataTables v1.10.13
+        * BootStrap v3.3.7
     * 사용된 파일 : app.js, ./routes/products.js, ./views/products.ejs , ./public/bootstrap , ./public/jquery-1.12.0 , ./public/datatable
  5. Step5
     * 각 step 별로 branch 를 나누고 step 이 끝날때마다 master 와 merge 하는 방식을 취함
