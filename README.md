@@ -90,7 +90,48 @@
 14. package.json
     * app을 실행 시키는데 필요한 package 들의 list
     * build 시 이 list들을 바탕으로 package install 함
- 
     
-        
- 
+## 5. Step
+ 1. Step1
+  * VM
+    * name : dev-akaun.ncl
+    * package : npm, NodeJS, vim, MongoDB
+ 2. Step2
+    * 사용된 파일 : app.js, ./route/test.js
+    * URL : 10.110.240.13/test
+ 3. Step3
+    * Data : http://data.seoul.go.kr/openinf/sheetview.jsp?infId=OA-13430
+    * 방법 : MongoDB 에서 제공해주는 command line 기능으로 csv파일을 database 로딩하는 shell script 를 만듬
+        * 파일 : ./data/data_load.sh
+ 4. Step4
+    * JS Package : Jquery, DataTables, BootStrap
+    * 사용된 파일 : app.js, ./routes/products.js, ./views/products.ejs , ./public/bootstrap , ./public/jquery-1.12.0 , ./public/datatable
+ 5. Step5
+    * 각 step 별로 branch 를 나누고 step 이 끝날때마다 master 와 merge 하는 방식을 취함
+ 6. Step6
+    * VM
+        * load balancer : dev-akaun_lb / 10.113.228.131
+        * Web1 Server  : dev-akaun_web1 / 10.110.240.196
+        * Web2 Server  : dev-akaun_web2 / 10.110.240.191
+        * DB Server  : dev-akaun_db1 / 10.110.240.205
+    * URL 
+        * http://10.113.228.131/test
+ 7. Step7
+    * URL 
+        * http://10.113.228.131/products
+    * Shell Script
+        * ./shell_script
+ 8. Step8
+    * URL 
+        * http://10.113.228.131/products/graph
+    * Javascript Package
+        * Angular JS v1.6.1
+        * Angular Resource v1.6.1 
+        * Angular Chart v1.1.1
+    * 사용된 파일 :
+        * Front-End
+            * ./view/graph.js
+            * ./node_moduldes : angular, angular-resource, angular-chart.js
+            * ./public/graph/js
+        * Back-End
+            * ./route/products.js
