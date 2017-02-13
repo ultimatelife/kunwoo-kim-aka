@@ -97,17 +97,23 @@
     * name : dev-akaun.ncl
     * package
         * npm v3.10.8
+            * 주요 모듈
+                * express v4.14.0
+                * pm2 v3.10.8
+                * mongoose v4.8.1
+                * 나머지모듈은 package.json 의 dependencies 에 있음
         * NodeJS v6.9.1
         * vim v7.4.160
         * MongoDB v3.2.12
  2. Step2
     * 사용된 파일 : app.js, ./route/test.js
-    * URL : 10.110.240.13/test
+    * URL : http://10.110.240.13/test
  3. Step3
     * Data : http://data.seoul.go.kr/openinf/sheetview.jsp?infId=OA-13430
     * 방법 : MongoDB 에서 제공해주는 command line 기능으로 csv파일을 database 로딩하는 shell script 를 만듬
         * 파일 : ./data/data_load.sh
  4. Step4
+    * URL : http://10.110.240.13/products
     * JS Package
         * Jquery v1.12.0
         * DataTables v1.10.13
